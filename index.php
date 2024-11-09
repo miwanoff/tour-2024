@@ -22,7 +22,9 @@
             <option value="airplane">Літак</option>
             <option value="train">Потяг</option>
         </select><br>
-        <button name="formSubmit">ОК</button>
+        <label for='stars'> Stars (from 1 to 5): </label>
+        <input type="number" name="stars" id="stars" min="1" max="5" value="3"><br>
+        <button name=" formSubmit">ОК</button>
     </form>
 </body>
 
