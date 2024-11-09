@@ -1,6 +1,8 @@
 <?php
 $country = $_GET["country"];
 $transport = $_GET['transport'];
+$stars = $_GET["stars"];
+$price = $_GET["price"];
 include "header.php";
 
 ?>
@@ -8,6 +10,8 @@ include "header.php";
 <ul>
     <li><?=$country?></li>
     <li><?=$transport?></li>
+    <li><?=$stars?></li>
+    <li><?=$price?></li>
 </ul>
 <?php
 //echo "$country $transport" ;

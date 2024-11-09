@@ -5,6 +5,8 @@ $redir = "country.php";
 if (isset($_POST['formSubmit'])) {
     $country = $_POST['formCountry'];
     $transport = $_POST['transport'];
+    $stars = $_POST["stars"];
+    $price = $_POST["price"];
     //$redir = "US.php";
     // switch ($country) {
     //     case "US":$redir = "US.php";
@@ -21,6 +23,6 @@ if (isset($_POST['formSubmit'])) {
     //     exit();
     //         break;
     // }
-    header("Location: $redir?country=$country&transport=$transport");
+    header("Location: $redir?country=$country&transport=$transport&stars=$stars&price=$price");
     exit();
 }
