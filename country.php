@@ -7,6 +7,7 @@ include "header.php";
 include_once "db.php";
 
 ?>
+<h2><?=$country?></h2>
 <h2>Ви обрали:</h2>
 <ul>
     <li><?=$country?></li>
@@ -26,8 +27,8 @@ foreach ($tours as $key => $tour) {
 echo "<h2>Тури</h2>";
 for ($i = 0; $i < count($tour_keys); $i++) {
     //print_r($tours[$tour_keys[$i]]);
-    $n = $i+1;
-    echo "<h3>".$n."</h3>";
+    $n = $i + 1;
+    echo "<h3>" . $n . "</h3>";
     foreach ($tours[$tour_keys[$i]] as $key => $value) {
         echo "$key: $value <br>";
     }
