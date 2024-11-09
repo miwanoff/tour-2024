@@ -15,7 +15,13 @@
             <option value="France">Франція</option>
             <option value="Mexico">Мексика</option>
             <option value="Japan">Японія</option>
-        </select>
+        </select><br>
+        <label for='transport'> Виберіть транспорт: </label>
+        <select name="transport">
+            <option value="bus">Автобус</option>
+            <option value="airplane">Літак</option>
+            <option value="train">Потяг</option>
+        </select><br>
         <button name="formSubmit">ОК</button>
     </form>
 </body>

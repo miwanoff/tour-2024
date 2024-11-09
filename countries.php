@@ -1,22 +1,25 @@
 <?php
-$v = "US";
+$country = "US";
+$transport = $_POST['transport'];
+//echo $transport ;
 if (isset($_POST['formSubmit'])) {
-    $v = $_POST['formCountry'];
-    $redir = "US.html";
-    switch ($v) {
-        case "US":$redir = "US.html";
+    $country = $_POST['formCountry'];
+    $redir = "US.php";
+    switch ($country) {
+        case "US":$redir = "US.php";
             break;
-        case "UK":$redir = "UK.html";
+        case "UK":$redir = "UK.php";
             break;
-        case "France":$redir = "France.html";
+        case "France":$redir = "France.php";
             break;
-        case "Mexico":$redir = "Mexico.html";
+        case "Mexico":$redir = "Mexico.php";
             break;
-        case "Japan":$redir = "Japan.html";
+        case "Japan":$redir = "Japan.php";
             break;
-        default:echo ("Error!");exit();
+        default:echo ("Error!");
+        exit();
             break;
     }
-    header("Location: $redir");
+    header("Location: $redir?country=$country&transport=$transport");
     exit();
 }
